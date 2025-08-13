@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroBridge - AI for Mental Health Early Detection and Support</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="NeuroBridge leverages advanced AI to identify mental health concerns early, providing personalized support for youth, veterans, and indigenous communities.">
+    <meta name="keywords" content="mental health, AI, early detection, support, youth, veterans, indigenous communities, healthcare technology">
+    <meta name="author" content="InnovIA Technologies">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="NeuroBridge - AI for Mental Health Early Detection and Support">
+    <meta property="og:description" content="Advanced AI platform for early mental health detection and personalized support.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ request.url }}">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NeuroBridge - AI for Mental Health">
+    <meta name="twitter:description" content="Early detection and compassionate care for better mental health outcomes.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-brain me-2"></i>NeuroBridge
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#for-you">Who It's For</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#signup">Early Access</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-primary ms-2 px-3" href="#demo">View Demo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Early Detection.<br>
+                            <span class="text-gradient">Compassionate Care.</span><br>
+                            Better Outcomes.
+                        </h1>
+                        <p class="hero-subtitle">
+                            NeuroBridge leverages advanced AI to identify mental health concerns early, 
+                            providing personalized support and connecting individuals to appropriate care 
+                            when they need it most.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#demo" class="btn btn-primary btn-lg me-3 pulse-button">
+                                <i class="fas fa-play me-2"></i>View Demo
+                            </a>
+                            <a href="#signup" class="btn btn-outline-light btn-lg">
+                                Get Early Access
+                            </a>
+                        </div>
+                        
+                        <!-- Stats section -->
+                        <div class="hero-stats mt-5">
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number">85%</div>
+                                        <div class="stat-label">Earlier Detection</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number">24/7</div>
+                                        <div class="stat-label">Available Support</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="stat-item">
+                                        <div class="stat-number">1000+</div>
+                                        <div class="stat-label">Lives Touched</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="floating-card">
+                            <i class="fas fa-heartbeat"></i>
+                            <span>Real-time Monitoring</span>
+                        </div>
+                        <div class="floating-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Privacy Protected</span>
+                        </div>
+                        <div class="floating-card">
+                            <i class="fas fa-users"></i>
+                            <span>Community Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Intelligent Mental Health Support</h2>
+                    <p class="section-subtitle">
+                        Our AI-powered platform combines cutting-edge technology with compassionate care 
+                        to provide comprehensive mental health support.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>AI-Powered Detection</h4>
+                        <p>Advanced machine learning algorithms analyze patterns to identify early signs of mental health concerns.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h4>Privacy First</h4>
+                        <p>Your data is encrypted and protected with the highest security standards. You control what you share.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Personalized Care</h4>
+                        <p>Tailored recommendations and resources based on your unique needs and circumstances.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>24/7 Availability</h4>
+                        <p>Access support and resources anytime, anywhere. Mental health doesn't follow business hours.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h4>Care Coordination</h4>
+                        <p>Seamlessly connect with healthcare providers, counselors, and support networks.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Progress Tracking</h4>
+                        <p>Monitor your mental health journey with insights and analytics that help you stay on track.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Segments Section -->
+    <section id="for-you" class="user-segments-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Designed for Everyone</h2>
+                    <p class="section-subtitle">
+                        NeuroBridge provides specialized support tailored to the unique needs of different communities.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="segment-card">
+                        <div class="segment-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Youth & Students</h4>
+                        <p>
+                            Navigate academic pressure, social challenges, and developmental changes with 
+                            age-appropriate support and early intervention strategies.
+                        </p>
+                        <ul class="segment-features">
+                            <li>Academic stress management</li>
+                            <li>Peer relationship support</li>
+                            <li>Identity development guidance</li>
+                            <li>Crisis prevention</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="segment-card">
+                        <div class="segment-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h4>Veterans</h4>
+                        <p>
+                            Specialized support for service members and veterans dealing with PTSD, 
+                            transition challenges, and service-related mental health concerns.
+                        </p>
+                        <ul class="segment-features">
+                            <li>PTSD management</li>
+                            <li>Transition support</li>
+                            <li>Military-informed care</li>
+                            <li>Peer connections</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="segment-card">
+                        <div class="segment-icon">
+                            <i class="fas fa-feather-alt"></i>
+                        </div>
+                        <h4>Indigenous Communities</h4>
+                        <p>
+                            Culturally sensitive mental health support that honors traditional healing 
+                            practices while integrating modern therapeutic approaches.
+                        </p>
+                        <ul class="segment-features">
+                            <li>Cultural integration</li>
+                            <li>Traditional healing respect</li>
+                            <li>Community-centered care</li>
+                            <li>Intergenerational support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="demo" class="cta-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title text-white">See NeuroBridge in Action</h2>
+                    <p class="section-subtitle text-white-75 mb-4">
+                        Experience how our AI-powered platform can transform mental health care. 
+                        View our interactive prototype and see the difference early detection can make.
+                    </p>
+                    <a href="{{ url_for('demo') }}" class="btn btn-light btn-lg">
+                        <i class="fas fa-external-link-alt me-2"></i>View Prototype Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Signup Section -->
+    <section id="signup" class="signup-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="signup-card">
+                        <div class="text-center mb-4">
+                            <h2 class="section-title">Get Early Access</h2>
+                            <p class="section-subtitle">
+                                Be among the first to experience NeuroBridge. Sign up for early access 
+                                and help shape the future of mental health technology.
+                            </p>
+                        </div>
+                        
+                        <!-- Flash Messages -->
+                        {% with messages = get_flashed_messages(with_categories=true) %}
+                            {% if messages %}
+                                <div class="mb-4">
+                                    {% for category, message in messages %}
+                                        <div class="alert alert-{{ 'danger' if category == 'error' else 'success' if category == 'success' else 'info' }} alert-dismissible fade show" role="alert">
+                                            {{ message }}
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        {% endwith %}
+                        
+                        <form method="POST" action="{{ url_for('email_signup') }}" class="signup-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Name (Optional)</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="your@email.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="user_type" class="form-label">I am a... (Optional)</label>
+                                    <select class="form-select" id="user_type" name="user_type">
+                                        <option value="">Select one</option>
+                                        <option value="youth">Youth/Student</option>
+                                        <option value="veteran">Veteran</option>
+                                        <option value="indigenous">Indigenous Community Member</option>
+                                        <option value="healthcare">Healthcare Provider</option>
+                                        <option value="researcher">Researcher</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        <i class="fas fa-rocket me-2"></i>Join Early Access
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                        <div class="text-center mt-4">
+                            <small class="text-muted">
+                                By signing up, you agree to receive updates about NeuroBridge. 
+                                We respect your privacy and won't spam you.
+                            </small>
+                        </div>
+                        
+                        <!-- Trust indicators -->
+                        <div class="trust-indicators mt-4">
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <div class="trust-item">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>HIPAA Compliant</span>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="trust-item">
+                                        <i class="fas fa-lock"></i>
+                                        <span>256-bit Encryption</span>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="trust-item">
+                                        <i class="fas fa-user-md"></i>
+                                        <span>Clinician Approved</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <h5><i class="fas fa-brain me-2"></i>NeuroBridge</h5>
+                        <p class="text-muted">
+                            AI for Mental Health Early Detection and Support
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h6>Contact Information</h6>
+                    <div class="contact-info">
+                        <p><i class="fas fa-building me-2"></i>InnovIA Technologies</p>
+                        <p><i class="fas fa-envelope me-2"></i>hello@neurobridge.ai</p>
+                        <p><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h6>Follow Us</h6>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-muted mb-0">
+                        © 2025 InnovIA Technologies. All rights reserved. | 
+                        <a href="#" class="text-muted">Privacy Policy</a> | 
+                        <a href="#" class="text-muted">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema.org markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "NeuroBridge",
+        "description": "AI for Mental Health Early Detection and Support",
+        "url": "{{ request.url_root }}",
+        "logo": "{{ request.url_root }}static/images/logo.png",
+        "sameAs": [
+            "https://twitter.com/neurobridge",
+            "https://linkedin.com/company/neurobridge"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "hello@neurobridge.ai",
+            "contactType": "customer support"
+        }
+    }
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
